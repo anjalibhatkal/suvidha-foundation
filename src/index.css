@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Hind", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ffe9c9;
+  color: #240b28;
+}
+
+.tabs {
+  position: sticky;
+}
+
+.tab-active {
+  border-color: #240b28;
+}
