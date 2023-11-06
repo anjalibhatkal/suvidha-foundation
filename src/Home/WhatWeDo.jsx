@@ -11,7 +11,7 @@ const WhatWeDo = () => {
   return (
     <div>
       <div id="what-we-do" className="w-screen pt-14 pb-20 px-24 bg-base-300">
-        <h2 className="text-primary-200 text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+        <h2 className="text-primary-300 text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
           What We Do?
         </h2>
         <div

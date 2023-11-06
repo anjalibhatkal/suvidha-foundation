@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-primary-300 w-screen px-10 py-8 h-28 flex space-x-3">
+      <div className="navbar bg-primary-300 w-screen lg:px-10 lg:py-8 lg:h-28 flex lg:space-x-3">
         <div className="navbar-start ">
           <div className=" bg-opacity-80 w-[21.5rem] px-10 py-2 rounded-lg flex items-start justify-center hover:cursor-pointer hover:bg-opacity-50">
             <Link to="/">
@@ -31,7 +31,7 @@ const Header = () => {
                   <li className="rounded hover:bg-base-200 m-1">
                     <Link to="/certificates">CERTIFICATES</Link>
                   </li>
-                  <li className="rounded hover:bg-base-200m-1">
+                  <li className="rounded hover:bg-base-200 m-1">
                     <Link to="/internship">INTERNSHIP</Link>
                   </li>
                   <li className="rounded hover:bg-base-200 m-1">

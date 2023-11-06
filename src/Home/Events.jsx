@@ -58,7 +58,7 @@ const Events = () => {
         <div className="text-center">
           <Link
             to="/events"
-            className="btn sm:btn-sm md:btn-md bg-base-500 text-primary-100 border-0 hover:bg-base-300 hover:text-primary-100 mx-auto w-44"
+            className="btn sm:btn-sm md:btn-md bg-base-300 text-primary-100 border-0 hover:bg-base-200 hover:text-primary-100 mx-auto w-44"
           >
             <p className="text-lg"> VIEW MORE</p>
           </Link>

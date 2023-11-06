@@ -10,6 +10,7 @@ import ApplyIntern from "./pages/ApplyIntern";
 import Contact from "./pages/Contact";
 import Certificates from "./pages/Certificates";
 import VerifyCertificate from "./pages/VerifyCertificate";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/verify-certificate" element={<VerifyCertificate />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>

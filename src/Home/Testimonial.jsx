@@ -21,7 +21,7 @@ const renderTestimonialSlide = (id, imagePath, name, desc) => {
         </div>
         <div
           className="h-[270px] w-[250px] flex justify-center items-center bg-gradient-to-b
- from-base-100 to-base-500/80 py-5 px-10 text-center rounded-lg hover:scale-105 transition-all shadow-lg"
+ from-base-100 to-[#FD9346] py-5 px-10 text-center rounded-lg hover:scale-105 transition-all shadow-lg"
         >
           <p className="text-primary-100 text-md">"{desc}"</p>
         </div>

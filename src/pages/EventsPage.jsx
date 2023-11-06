@@ -16,12 +16,15 @@ const EventsPage = () => {
         style={{ backgroundImage: `url(${eventsImg})` }}
         className="bg-cover bg-center h-96"
       >
-        <div className="bg-black/30 w-full h-full flex justify-start items-end p-12"></div>
+        <div className="bg-black/30 w-screen h-full flex justify-start items-end p-12"></div>
       </div>
       <p className="text-4xl font-bold text-primary-100 w-[300px] text-center bg-base-300 px-6 py-4 rounded-md absolute top-[340px] left-24">
         Events
       </p>
-      <div className="bg-base-100 py-20 px-24">
+      <div
+        className="bg-gradient-to-b
+from-base-100/50 to-[#FD9346] py-20 px-20"
+      >
         <h2 className="text-primary-200 text-4xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
           Our Charity Events: <br />
           Celebrating Our Impact Together
@@ -29,9 +32,12 @@ const EventsPage = () => {
         <div className="bg-base-200 rounded-full mx-auto text-base-400 text-xl p-3 bg-opacity-50 w-72 font-medium tracking-wide text-center shadow-md mb-5">
           <h3>Our Events</h3>
         </div>
-        <div className="grid grid-cols-2 gap-4 w-[800px] place-items-center mx-auto">
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+        <div className="grid grid-cols-2 gap-6 w-[800px] place-items-center mx-auto">
+          <div className="mx-auto my-4">
+            <div
+              className="card w-96 bg-gradient-to-b
+from-base-100/50 to-base-400/80 shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={tree} alt="TREE PLANTATION" />
               </figure>
@@ -48,8 +54,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={fund} alt="FUNDRAISING EVENTS" />
               </figure>
@@ -65,8 +74,11 @@ const EventsPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={clothes} alt="CLOTHS DISTRIBUTION" />
               </figure>
@@ -83,8 +95,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={women} alt="WOMEN'S DAY" />
               </figure>
@@ -101,8 +116,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={food} alt="FOOD DONATION INITIATIVES" />
               </figure>
@@ -119,8 +137,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img
                   src={animal}
@@ -140,8 +161,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={sanitary} alt="TREE PLANTATION" />
               </figure>
@@ -158,8 +182,11 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="w-8/12 mx-auto my-4">
-            <div className="card w-96 bg-base-300 bg-opacity-70 shadow-xl rounded-md transition hover:scale-110">
+          <div className="  mx-auto my-4">
+            <div
+              className="card w-96  bg-gradient-to-b
+from-base-100/50 to-base-400/80  shadow-xl rounded-md transition hover:scale-110"
+            >
               <figure>
                 <img src={workshop} alt="TREE PLANTATION" />
               </figure>
