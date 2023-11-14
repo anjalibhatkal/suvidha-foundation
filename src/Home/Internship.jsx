@@ -7,20 +7,20 @@ const Internship = () => {
     <div>
       <div
         id="student-benefits"
-        className="bg-gradient-to-b flex justify-center items-center from-base-100 to-base-300 w-screen px-24 py-14"
+        className="bg-gradient-to-b from-base-100 to-base-300 flex md:flex-row sm:flex-col justify-center items-center sm:px-7 md:px-24 sm:py-4 md:py-14"
       >
-        <div id="internship-info" className="p-3">
-          <h1 className="text-5xl font-bold text-primary-200 mb-4">
+        <div id="internship-info" className="md:p-5">
+          <h1 className="sm:text-2xl md:text-5xl font-bold text-primary-200 my-4">
             Our Internship & Mentorship Opportunities
           </h1>
-          <p className="mb-5 text-lg w-[600px] ml-1 text-primary-100">
+          <p className="mb-5 sm:text-sm md:text-lg ml-1 text-primary-100">
             <i>
               Seize the opportunity to jumpstart your career with an internship
               that propels you towards success and offers invaluable experience.
             </i>
           </p>
-          <div className="container bg-base-100 p-5  text-center w-[550px] bg-opacity-50 rounded-xl shadow-md">
-            <p className="mb-3 text-lg w-[500px] text-primary-100">
+          <div className="container bg-base-100 p-5 text-center bg-opacity-50 rounded-xl shadow-md">
+            <p className="mb-3 sm:text-base md:text-lg text-primary-100">
               The Suvidha Foundation Internship Program offers students and
               recent graduates a unique opportunity to gain experience,
               contribute to our work, and build a professional portfolio based
@@ -34,7 +34,11 @@ const Internship = () => {
             </Link>
           </div>
         </div>
-        <img src={student} alt="Student Illustration" width={"400px"} />
+        <img
+          src={student}
+          alt="Student Illustration"
+          className="sm:w-[200px] md:w-[600px]"
+        />
       </div>
     </div>
   );

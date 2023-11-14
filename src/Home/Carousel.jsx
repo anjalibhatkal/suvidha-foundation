@@ -22,7 +22,8 @@ const Carousel = () => {
     "Join our internship programs and gain experience in fundraising and web development while making a positive impact.",
     "Join us in our efforts to spread happiness and make a meaningful difference in countless lives.",
   ];
-  const durations = [4000, 3420, 2700, 3000];
+
+  const durations = [4000, 3480, 3600, 3000];
   const [content, setContent] = useState(0);
 
   useEffect(() => {
@@ -38,16 +39,19 @@ const Carousel = () => {
   return (
     <div
       style={{ backgroundImage: `url(${carouselBg})` }}
-      className="bg-cover bg-center"
+      className="bg-cover bg-center sm:h-[350px] md:h-[600px]"
     >
-      <div className="bg-white/5">
+      <div className="bg-white/5 h-full">
         <div
           id="carousel-part"
-          className="flex flex-row items-center justify-center mx-auto max-w-4xl space-x-90  py-14"
+          className="flex items-center justify-center py-14 mx-auto sm:px-0 md:px-64 sm:pb-20 md:flex-row md:w-screen md:space-x-20"
         >
-          <div id="carousel-info" className="basis-1/2 w-[1000px] m-5">
-            <div>
-              <h2 className="text-5xl mb-3 text-primary-300">
+          <div
+            id="carousel-info"
+            className="md:basis-1/2 mx-auto md:w-[1000px] p-5"
+          >
+            <div className="md:h-72 sm:h-44">
+              <h2 className="text-2xl md:text-5xl mb-3 text-primary-300">
                 <b>
                   Our{" "}
                   <span>
@@ -67,9 +71,9 @@ const Carousel = () => {
                   <Cursor />
                 </b>
               </h2>
-              <p className="text-left my-3">{descriptions[content]}</p>
+              <div className="text-left my-3">{descriptions[content]}</div>
             </div>
-            <div className="button-grp flex">
+            <div className="button-grp flex my-2">
               <Link
                 to="/"
                 className="btn sm:btn-sm md:btn-md bg-base-300 text-primary-100 border-0 hover:bg-base-100 hover:text-primary-100 mr-5 shadow-lg"
@@ -87,7 +91,7 @@ const Carousel = () => {
 
           <div
             id="carousel-photos"
-            className="flex justify-center items-center mt-9 mb-14 basis-1/2 ml-20"
+            className="justify-center items-center mt-9 mb-14 basis-1/2 ml-20 sm:hidden md:flex"
           >
             <div className="mask mask-squircle w-[460px] h-[460px] bg-base-100 bg-opacity-90 z-10 absolute">
               .
@@ -101,7 +105,7 @@ const Carousel = () => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                  delay: 3500,
+                  delay: 3300,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
@@ -137,10 +141,10 @@ const Carousel = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="mask mask-squircle w-10 h-10 top-[200px] right-[280px] bg-base-400 z-40 absolute">
+            <div className="mask mask-squircle w-10 h-10 md:top-[200px] md:right-[280px] bg-base-400 z-40 absolute ">
               .
             </div>
-            <div className="mask mask-squircle w-5 h-5 top-[240px] right-[260px] bg-primary-200 z-40 absolute">
+            <div className="mask mask-squircle w-5 h-5 md:top-[240px] md:right-[260px] bg-primary-200 z-40 absolute ">
               .
             </div>
           </div>
@@ -151,3 +155,5 @@ const Carousel = () => {
 };
 
 export default Carousel;
+// sm:top-[400px] sm:left-[400px]
+// sm:top-[440px] sm:left-[440px]

@@ -11,41 +11,45 @@ const Achievements = () => {
       className="bg-fixed bg-cover bg-center"
       style={{ backgroundImage: `url(${img})` }}
     >
-      <div className="h-[400px] bg-black/70 grid grid-cols-4 px-24 py-14 text-white text-lg font-bold tracking-widest">
-        <div className="flex justify-center items-center space-x-5">
-          <img src={tree} alt="Tree SVG" className="w-12" />
+      <div className="md:h-[400px] bg-black/70 grid md:grid-cols-4 sm:px-12 md:px-24 py-14 text-white md:text-lg font-bold tracking-widest sm:grid-rows-8">
+        <div className="flex justify-center items-center space-x-5 sm:my-3 md:my-0">
+          <img src={tree} alt="Tree SVG" className="sm:w-8 md:w-12" />
           <div>
-            <p className="text-7xl">
+            <p className="sm:text-lg md:text-7xl">
               54L<sup>+</sup>
             </p>
-            <p className="text-2xl">TREES PLANTED</p>
+            <p className="sm:text-base md:text-2xl">TREES PLANTED</p>
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-5">
-          <img src={country} alt="Country SVG" className="w-12" />
+        <div className="flex justify-center items-center space-x-5 sm:my-3 md:my-0">
+          <img src={country} alt="Country SVG" className="sm:w-8 md:w-12" />
           <div>
-            <p className="text-7xl">
+            <p className="sm:text-lg md:text-7xl">
               15<sup>+</sup>
             </p>
-            <p className="text-2xl">COUNTRIES</p>
+            <p className="sm:text-base md:text-2xl">COUNTRIES</p>
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-5">
-          <img src={volunteer} alt="Volunteer SVG" className="w-12" />
+        <div className="flex justify-center items-center space-x-5 sm:my-3 md:my-0">
+          <img src={volunteer} alt="Volunteer SVG" className="sm:w-8 md:w-12" />
           <div>
-            <p className="text-7xl">
+            <p className="sm:text-lg md:text-7xl">
               3L<sup>+</sup>
             </p>
-            <p className="text-2xl">VOLUNTEERS</p>
+            <p className="sm:text-base md:text-2xl">VOLUNTEERS</p>
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-5">
-          <img src={internship} alt="Internship SVG" className="w-12" />
+        <div className="flex justify-center items-center space-x-5 sm:my-3 md:my-0">
+          <img
+            src={internship}
+            alt="Internship SVG"
+            className="sm:w-8 md:w-12"
+          />
           <div>
-            <p className="text-7xl">
+            <p className="sm:text-lg md:text-7xl">
               1Cr<sup>+</sup>
             </p>
-            <p className="text-2xl">INTERNSHIP GOAL</p>
+            <p className="sm:text-base md:text-2xl">INTERNSHIP GOAL</p>
           </div>
         </div>
       </div>

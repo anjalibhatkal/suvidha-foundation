@@ -12,34 +12,38 @@ const VerifyCertificate = () => {
         >
           <div className="bg-black/30 w-full h-full flex justify-start items-end p-12"></div>
         </div>
-        <p className="text-4xl font-bold text-primary-100 w-[300px] text-center bg-base-300 px-6 py-4 rounded-md absolute top-[340px] left-24">
+        <p className="sm:text-sm md:text-4xl font-bold text-primary-100 text-center bg-base-300 md:w-[300px] sm:p-2 md:px-6 md:py-4 rounded-md absolute sm:top-[360px] md:top-[340px] sm:left-4 md:left-24">
           Certificates
         </p>
-        <div className="bg-gradient-to-b from-base-100/50 to-[#FD9346] py-20 px-24">
-          <h2 className="text-primary-200 text-4xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+        <div className="bg-gradient-to-b from-base-100/50 to-[#FD9346] py-20 sm:px-7 md:px-24">
+          <h2 className="text-primary-200 sm:text-xl md:text-4xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-105">
             Certificates of Gratitude, <br />
             Tokens of Impact.
           </h2>
-          <div className="bg-base-400 rounded-full mx-auto text-base-100 text-xl p-3 bg-opacity-80 w-72 font-medium tracking-wide text-center shadow-md mb-5">
+          <div
+            className="bg-base-400 rounded-full mx-auto
+          sm:text-sm sm:p-2 md:w-72
+          md:text-lg md:p-3 bg-opacity-80 font-medium tracking-wide text-center shadow-md mb-5 text-base-100"
+          >
             <h3>Verify Your Certificate</h3>
           </div>
-          <div className="px-24 flex space-x-4 items-center justify-center mb-5">
+          <div className="md:px-24 flex nd:flex-row sm:flex-col sm:space-y-3 md:space-x-4 items-center justify-center mb-5">
             <input
               type="text"
               placeholder="Enter Reference Number"
-              class="input input-bordered border-4 border-base-400 bg-base-100 w-full max-w-xs"
+              className="input input-bordered border-4 border-base-400 bg-base-100 md:w-80"
             />
             <Link
               to="/"
               className="btn sm:btn-sm md:btn-md bg-base-300 text-primary-100 border-0 hover:bg-base-400 hover:text-primary-100 mr-5 shadow-lg"
             >
-              Watch Video
+              VERIFY
             </Link>
           </div>
-          <p className="text-primary-300 font-bold text-2xl text-center mb-10 hidden">
+          <p className="text-primary-300 font-bold sm:text-sm md:text-2xl text-center sm:mb-2 md:mb-10 hidden ">
             Record Found!
           </p>
-          <p className="text-primary-300 font-bold text-2xl text-center mb-10 hidden">
+          <p className="text-primary-300 font-bold sm:text-sm md:text-2xl text-center sm:mb-2 md:mb-10 hidden">
             Record Not Found!
           </p>
         </div>

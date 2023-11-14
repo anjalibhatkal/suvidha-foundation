@@ -37,15 +37,19 @@ const Testimonial = () => {
         className="bg-base-100 w-screen py-20 border-t-red-800 border-t-4"
         id="about-us"
       >
-        <h2 className="text-primary-200 text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+        <h2 className="text-primary-200 sm:text-xl md:text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-105">
           What's Being Said About Our Charity Initiatives
         </h2>
-        <div className="bg-base-200 rounded-full mx-auto text-base-400 text-xl p-3 bg-opacity-50 w-72 font-medium tracking-wide text-center shadow-md mb-10">
+        <div
+          className="bg-base-200 rounded-full mx-auto text-base-400
+          sm:text-sm sm:p-2 md:w-80
+          md:text-lg md:p-3 bg-opacity-50 font-medium tracking-wide text-center shadow-md w-72 mb-10"
+        >
           <h3>Testimonial</h3>
         </div>
         <div
           id="testimonial-info"
-          className="px-12 pt-12 w-[1000px] h-[450px] mx-auto rounded-md bg-white bg-opacity-90 shadow-2xl"
+          className="sm:px-0 md:px-12 pt-12 w-[1000px] md:h-[450px] mx-auto rounded-md bg-white bg-opacity-90 shadow-2xl"
         >
           <Swiper
             slidesPerView={3}

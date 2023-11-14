@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Certificates from "./pages/Certificates";
 import VerifyCertificate from "./pages/VerifyCertificate";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import GoToTop from "./components/GoToTop";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/verify-certificate" element={<VerifyCertificate />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
+      <GoToTop />
       <Footer />
     </div>
   );

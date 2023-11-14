@@ -33,31 +33,35 @@ const ApplyIntern = () => {
         >
           <div className="bg-black/30 w-full h-full flex justify-start items-end p-12"></div>
         </div>
-        <p className="text-4xl font-bold text-primary-100 w-[300px] text-center bg-base-300 px-6 py-4 rounded-md absolute top-[340px] left-24">
+        <p className="sm:text-sm md:text-4xl font-bold text-primary-100 text-center bg-base-300 md:w-[300px] sm:p-2 md:px-6 md:py-4 rounded-md absolute sm:top-[360px] md:top-[340px] sm:left-4 md:left-24">
           Internships
         </p>
         <div
           className="bg-gradient-to-b
-from-base-100/50 to-[#FD9346] pt-20 px-24"
+from-base-100/50 to-[#FD9346] pt-20 sm:px-7 md:px-24"
         >
-          <h2 className="text-primary-200 text-4xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+          <h2 className="text-primary-200 sm:text-xl md:text-4xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-105">
             Elevate Your Future: <br /> Join our Internship and Mentorship
             Program.
           </h2>
-          <div className="bg-base-200 rounded-full mx-auto text-base-400 text-xl p-3 bg-opacity-50 w-72 font-medium tracking-wide text-center shadow-md mb-5">
+          <div
+            className="bg-base-200 rounded-full mx-auto text-base-400
+          sm:text-sm sm:p-2 md:w-72
+          md:text-lg md:p-3 bg-opacity-50 font-medium tracking-wide text-center shadow-md mb-5"
+          >
             <h3>Our Internships</h3>
           </div>
-          <div className="flex space-x-10 items-center justify-center px-24 my-10">
+          <div className="flex md:flex-row sm:flex-col sm:space-y-2 md:space-x-10 items-center justify-center sm:px-7 md:px-24 sm:py-3 md:py-10">
             <div className="flex space-y-3 text-center justify-center flex-col items-center">
-              <h1 className="text-3xl font-bold text-base-300">
-                <span className="text-5xl text-primary-100 ">
+              <h1 className="sm:text-base md:text-3xl font-bold text-base-300">
+                <span className="sm:text-xl md:text-5xl text-primary-100 ">
                   Suvidha Foundation
                 </span>{" "}
                 <br />
                 Internships
               </h1>
               <div className="border-t-2 border-spacing-y-20 border-base-300 py-3">
-                <p className="text-2xl text-primary-100">
+                <p className="sm:text-lg md:text-2xl text-primary-100">
                   Join Our Impactful Internship Program and Make a Difference.
                 </p>
                 <Link
@@ -69,18 +73,22 @@ from-base-100/50 to-[#FD9346] pt-20 px-24"
               </div>
             </div>
             <div>
-              <img src={item1} alt="Interns Image" width={500} />
+              <img
+                src={item1}
+                alt="Interns Image"
+                className="sm:w-44 md:w-80 items-center"
+              />
             </div>
           </div>
-          <div className="flex space-x-10 items-center justify-center px-24 my-12 border-t-8 border-spacing-y-20 border-primary-200 py-10">
+          <div className="flex md:flex-row sm:flex-col sm:space-y-4 md:space-x-10 items-center justify-center sm:px-7 md:px-24 md:my-12 border-t-8 border-spacing-y-20 border-primary-200 sm:py-5 md:py-10">
             <div>
               <img src={item2} alt="Interns Image" width={2000} />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-primary-300 mb-5">
+              <h1 className="sm:text-xl md:text-3xl font-bold text-primary-300 sm:mb-2 md:mb-5">
                 Student Internship and Mentorship Programs.
               </h1>
-              <p className="text-xl text-primary-100">
+              <p className="sm:text-base md:text-xl text-primary-100">
                 At Suvidha Foundation, we offer a range of free internship
                 opportunities, both technical and non-technical, as well as
                 social work programs. Our internship programs aim to provide
@@ -90,12 +98,12 @@ from-base-100/50 to-[#FD9346] pt-20 px-24"
               </p>
             </div>
           </div>
-          <div className="flex space-x-10 items-center justify-center px-24 my-12 border-t-8 border-spacing-y-20 border-primary-200 py-10">
+          <div className="flex  md:flex-row sm:flex-col sm:space-y-4 md:space-x-10 items-center justify-center sm:px-7 md:px-24 md:my-12 border-t-8 border-spacing-y-20 border-primary-200 sm:py-5 md:py-10">
             <div>
-              <h1 className="text-3xl font-bold text-primary-300 mb-5">
+              <h1 className="sm:text-xl md:text-3xl font-bold text-primary-300 sm:mb-2 md:mb-5">
                 Why Should You Apply for This Internship?
               </h1>
-              <p className="text-xl text-primary-100">
+              <p className="sm:text-base md:text-xl text-primary-100">
                 Student internship and mentorship program at our NGO Suvidha
                 Foundation (Suvidha Mahila Mandal) offers valuable opportunities
                 for students to gain practical experience, contribute to
@@ -109,16 +117,23 @@ from-base-100/50 to-[#FD9346] pt-20 px-24"
               <img src={item3} alt="Interns Image" width={4000} />
             </div>
           </div>
-          <div className="py-20 border-t-red-800 border-t-4" id="about-us">
-            <h2 className="text-primary-300 text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+          <div
+            className="sm:py-4 md:py-20 border-t-red-800 border-t-4"
+            id="about-us"
+          >
+            <h2 className="text-primary-300 sm:text-xl md:text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-105">
               Internship Reviews: What Students Say
             </h2>
-            <div className="bg-base-400 rounded-full mx-auto text-base-100 text-xl p-3  w-72 font-medium tracking-wide text-center shadow-md mb-10">
+            <div
+              className="bg-base-400 rounded-full mx-auto
+          sm:text-sm sm:p-2 md:w-72
+          md:text-lg md:p-3 bg-opacity-50 font-medium tracking-wide text-center shadow-md text-base-100 mb-10"
+            >
               <h3>Testimonial</h3>
             </div>
             <div
               id="testimonial-info"
-              className="px-12 pt-12 w-[1000px] h-[480px] mx-auto rounded-md bg-white bg-opacity-90 shadow-2xl"
+              className="md:px-12 pt-12 w-[1000px] h-[480px] md:mx-auto rounded-md bg-white bg-opacity-90 shadow-2xl"
             >
               <Swiper
                 slidesPerView={3}

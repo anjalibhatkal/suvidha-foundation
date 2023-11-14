@@ -14,13 +14,13 @@ const About = () => {
         >
           <div className="bg-black/30 w-full h-full flex justify-start items-end p-12"></div>
         </div>
-        <p className="text-4xl font-bold text-primary-100 w-[300px] text-center bg-base-300 px-6 py-4 rounded-md absolute top-[340px] left-24">
+        <p className="sm:text-sm md:text-4xl font-bold text-primary-100 text-center bg-base-300 md:w-[300px] sm:p-2 md:px-6 md:py-4 rounded-md absolute sm:top-[360px] md:top-[340px] sm:left-4 md:left-24">
           About Us
         </p>
-        <div className="flex px-24 py-20 space-x-5 justify-around">
+        <div className="flex sm:flex-col md:flex-row sm:px-7 md:px-24 sm:py-10 md:py-20 sm:space-y-5 md:space-x-5 justify-around">
           <div className="flex space-y-6 justify-center flex-col items-center">
-            <h1 className="text-3xl font-bold text-center text-base-300">
-              <span className="text-5xl text-primary-100 ">
+            <h1 className="sm:text-base md:text-3xl font-bold text-center text-base-300">
+              <span className="sm:text-xl md:text-5xl text-primary-100 ">
                 Suvidha Foundation
               </span>{" "}
               <br />
@@ -28,8 +28,8 @@ const About = () => {
             </h1>
             <img src={about1} alt="About Image" width={320} />
           </div>
-          <div className="w-[600px]">
-            <p className="text-lg tracking-wide">
+          <div className="md:w-[600px]">
+            <p className="sm:text-base md:text-lg tracking-wide">
               We are a passionate and dedicated non-governmental organization
               (NGO) with a noble mission. Our goal is to make quality education
               accessible to individuals from financially challenged backgrounds,
@@ -52,11 +52,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="px-24 py-16 bg-base-400/100">
-          <h1 className="text-4xl font-bold text-start border-b-2 border-base-100 text-base-100 p-2">
+        <div className="sm:px-7 md:px-24 sm:py-8 md:py-16 bg-base-400/100">
+          <h1 className="sm:text-xl md:text-4xl font-bold text-start border-b-2 border-base-100 text-base-100 p-2">
             Vision
           </h1>
-          <ul className="text-xl tracking-wide p-5 text-base-100">
+          <ul className="sm:text-base md:text-xl tracking-wide p-5 text-base-100">
             <li>
               To nurture the next generation of entrepreneurs through
               skill-based education.
@@ -66,10 +66,10 @@ const About = () => {
               worldwide.
             </li>
           </ul>
-          <h1 className="text-4xl font-bold text-end border-b-2 border-base-100 text-base-100 p-2">
+          <h1 className="sm:text-xl md:text-4xl font-bold text-end border-b-2 border-base-100 text-base-100 p-2">
             Mission
           </h1>
-          <ul className="text-xl text-end tracking-wide p-5 text-base-100">
+          <ul className="sm:text-base md:text-xl text-end tracking-wide p-5 text-base-100">
             <li>
               To inspire students, assist them in innovation, and enable their
               integration to shape the next generation of humanity.

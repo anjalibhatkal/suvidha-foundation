@@ -10,22 +10,22 @@ const Background = () => {
   return (
     <div>
       <div className="bg-white w-screen py-14" id="about-us">
-        <h2 className="text-primary-200 text-5xl font-bold tracking-wide mb-4 text-center transition-transform hover:scale-110">
+        <h2 className="text-primary-200 sm:text-xl md:text-5xl font-bold tracking-wide sm:mb-1 md:mb-4 text-center transition-transform hover:scale-105">
           Discover Our Background
         </h2>
         <div
-          className="bg-base-200 rounded-full mx-auto text-base-400
-          text-xl p-3 bg-opacity-25 w-48 font-medium tracking-wide text-center shadow-md"
+          className="bg-base-200 rounded-full mx-auto text-base-400 sm:text-sm sm:p-1
+          md:text-xl md:p-3 bg-opacity-25 w-48 font-medium tracking-wide text-center shadow-md"
         >
           <h3>Why choose us?</h3>
         </div>
         <div
           id="about-info"
-          className="flex items-center justify-center mx-auto max-w-4xl"
+          className="flex justify-center md:my-8 mx-auto md:flex-row md:w-[768px] sm:flex-col px-4 sm:space-y-4"
         >
           <div
             id="about-photo"
-            className="flex justify-center items-center mt-16 mb-14 basis-1/2 mr-20"
+            className="flex justify-center items-center md:mt-16 md:mb-14 basis-1/2 md:mr-20 sm:hidden md:flex"
           >
             <div className="mask mask-squircle w-[440px] h-[440px] bg-base-200 -z-5 absolute">
               .
@@ -38,21 +38,21 @@ const Background = () => {
               src={about}
               alt="Empowerment of Women"
             />
-            <div className="mask mask-squircle w-9 h-9 top-[1260px] left-[255px] bg-primary-200 absolute">
+            <div className="mask mask-squircle w-9 h-9 md:top-[1260px] md:left-[255px] bg-primary-200 absolute">
               .
             </div>
-            <div className="mask mask-squircle w-5 h-5 top-[1240px] left-[240px] bg-base-300 absolute">
+            <div className="mask mask-squircle w-5 h-5 md:top-[1240px] md:left-[240px] bg-base-300 absolute">
               .
             </div>
           </div>
           <div
             id="about-tabs"
-            className="basis-1/2 w-[1000px] ml-24 flex items-center flex-col"
+            className="basis-1/2 md:ml-24 sm:ml-0 flex items-center flex-col"
           >
             <div className="tabs">
               <a
                 id="mission-tab"
-                className={`tab tab-bordered text-primary-100 text-xl duration-500 ${
+                className={`tab tab-bordered text-primary-100 text-base md:text-xl duration-500 ${
                   activeTab === "mission" ? "tab-active" : ""
                 }`}
                 onClick={() => handleActiveTab("mission")}
@@ -61,7 +61,7 @@ const Background = () => {
               </a>
               <a
                 id="vision-tab"
-                className={`tab tab-bordered text-primary-100 text-xl duration-500 ${
+                className={`tab tab-bordered text-primary-100 text-base md:text-xl duration-500 ${
                   activeTab === "vision" ? "tab-active" : ""
                 }`}
                 onClick={() => handleActiveTab("vision")}
@@ -70,7 +70,7 @@ const Background = () => {
               </a>
               <a
                 id="about-tab"
-                className={`tab tab-bordered text-primary-100 text-xl transition duration-500 ${
+                className={`tab tab-bordered text-primary-100 text-base md:text-xl transition duration-500 ${
                   activeTab === "about" ? "tab-active" : ""
                 }`}
                 onClick={() => handleActiveTab("about")}
@@ -82,7 +82,7 @@ const Background = () => {
             <div className="mt-6 relative rounded-2xl bg-base-200">
               <div
                 id="mission-content"
-                className="tab-panel mt-4 py-4 px-10 text-lg transition duration-300 space-x-1"
+                className="tab-panel sm:mt-0 md:mt-4 py-4 md:py-4 px-10 sm:text-sm md:text-base transition duration-300 space-x-1"
                 style={{ display: activeTab === "mission" ? "block" : "none" }}
               >
                 <ul className="list-disc text-primary-100">
@@ -99,7 +99,7 @@ const Background = () => {
 
               <div
                 id="vision-content"
-                className="tab-panel mt-4 py-4 px-10 text-lg transition duration-300 space-x-1"
+                className="tab-panel sm:mt-0 md:mt-4 py-4 md:py-4 px-10 sm:text-sm md:text-base transition duration-300 space-x-1"
                 style={{ display: activeTab === "vision" ? "block" : "none" }}
               >
                 <ul className="list-disc text-primary-100">
@@ -116,7 +116,7 @@ const Background = () => {
 
               <div
                 id="about-content"
-                className="tab-panel mt-4 py-4 px-10 text-lg transition duration-300 space-x-1"
+                className="tab-panel sm:mt-0 md:mt-4 py-4 md:py-4 px-10 sm:text-sm md:text-base transition duration-300 space-x-1"
                 style={{ display: activeTab === "about" ? "block" : "none" }}
               >
                 <p className="text-primary-100">

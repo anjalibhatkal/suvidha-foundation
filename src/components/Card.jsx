@@ -6,10 +6,10 @@ const Card = (props) => {
     <div>
       <div
         id="card"
-        className="w-64 max-h-96 flex flex-col justify-end bg-white shadow-lg rounded-md overflow-hidden"
+        className="md:w-64 md:max-h-96 sm:max-h-[60] flex flex-col justify-end bg-white shadow-lg rounded-md overflow-hidden"
       >
         <div className="group">
-          <div id="image" className="w-52 overflow-hidden mx-auto">
+          <div id="image" className="md:w-52 overflow-hidden mx-auto">
             <img
               src={props.image}
               alt="Shobha Photo"
@@ -18,8 +18,12 @@ const Card = (props) => {
           </div>
 
           <div id="card-body" className="bg-white text-center p-4">
-            <h1 className="text-xl font-bold text-primary-100">{props.name}</h1>
-            <p className="text-primary-200 text-lg">{props.des}</p>
+            <h1 className="sm:text-base md:text-xl font-bold text-primary-100">
+              {props.name}
+            </h1>
+            <p className="text-primary-200 sm:text-sm md:text-lg">
+              {props.des}
+            </p>
           </div>
           <div
             id="social-icons"

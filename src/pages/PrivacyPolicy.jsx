@@ -10,16 +10,16 @@ const PrivacyPolicy = () => {
             style={{ backgroundImage: `url(${privacy})` }}
             className="bg-cover bg-center h-96"
           >
-            <div className="bg-black/30 w-full h-full flex justify-start items-end p-12"></div>
+            <div className="bg-black/30 w-screen h-full flex justify-start items-end p-12"></div>
           </div>
-          <p className="text-4xl font-bold text-primary-100 w-[300px] text-center bg-base-300 px-6 py-4 rounded-md absolute top-[340px] left-24">
+          <p className="sm:text-base md:text-4xl font-bold text-primary-100 text-center bg-base-300 md:w-[300px] sm:p-2 md:px-6 md:py-4 rounded-md absolute sm:top-[360px] md:top-[340px] sm:left-4 md:left-24">
             Privacy Policy
           </p>
-          <div className="bg-gradient-to-b from-base-100/50 to-[#FDB777] py-20 px-24">
-            <h2 className="text-primary-300 text-5xl font-bold tracking-wide pb-4 text-center transition-transform hover:scale-110">
+          <div className="bg-gradient-to-b from-base-100/50 to-[#FDB777] py-20 sm:px-7 md:px-24">
+            <h2 className="text-primary-300 sm:text-xl md:text-4xl font-bold tracking-wide pb-4 text-center transition-transform hover:scale-105">
               Our Privacy Policy
             </h2>
-            <p className="text-xl py-5 tracking-wider text-center">
+            <p className="sm:text-sm md:text-xl md:py-5 tracking-wider text-center">
               We at Suvidha Mahila Mandal respect your concerns about privacy
               and value the relationship we have with you. We are committed to
               the ethical collection, retention and use of information that you
@@ -45,14 +45,14 @@ const PrivacyPolicy = () => {
               and other solicitations.
             </p>
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 How Do We Use Your Information?
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 Suvidha Mahila Mandal uses personally identifiable information
                 you provide about yourself:
               </p>
-              <ul className="list-disc px-10 text-xl tracking-wide">
+              <ul className="list-disc sm:px-4 md:px-10 sm:text-sm md:text-xl tracking-wide">
                 <li>To process your donation</li>
                 <li>To send you a receipt for your donation</li>
                 <li>
@@ -73,10 +73,10 @@ const PrivacyPolicy = () => {
               </ul>
             </div>
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Email Communications
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 When you ask us to send you email such as a free email
                 newsletter, you may provide us with certain information such as
                 your email address so we can fulfil your request. You may choose
@@ -86,10 +86,10 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Donations
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 When you make a donation through our Site, we may ask you to
                 submit certain personal information (such as credit card
                 information) so we can process your donation. We also maintain
@@ -100,10 +100,10 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Is Donation Secure?
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 Absolutely. The security and confidentiality of your information
                 is our highest priority. We use industry-standard SSL (secure
                 socket layer) technology to protect your information and provide
@@ -112,10 +112,10 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Credit / Debit Card Security
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 Suvidha Mahila Mandal is grateful for the donations that help us
                 continue our valuable work. When you donate to Suvidha Mahila
                 Mandal online, your card information is secured; your credit
@@ -129,14 +129,14 @@ const PrivacyPolicy = () => {
               </p>
             </div>
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Disclosure Of Data
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 Suvidha Mahila Mandal may disclose your Personal Data in the
                 good faith belief that such action is necessary to:
               </p>
-              <ul className="list-disc px-10 text-xl tracking-wide">
+              <ul className="list-disc sm:px-4 md:px-10 sm:text-sm md:text-xl tracking-wide">
                 <li>To comply with a legal obligation</li>
                 <li>
                   To protect and defend the rights or property of Suvidha Mahila
@@ -154,10 +154,10 @@ const PrivacyPolicy = () => {
               </ul>
             </div>
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Security Of Data
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 Suvidha Mahila Mandal has the necessary security mechanisms in
                 place and only designated employees have access to your personal
                 information.
@@ -180,10 +180,10 @@ const PrivacyPolicy = () => {
               </p>
             </div>
             <div className="py-4">
-              <h2 className="text-primary-300 text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
+              <h2 className="text-primary-300 sm:text-base md:text-4xl text-center font-bold tracking-wide transition-transform hover:scale-110 pb-4 border-t-2 border-spacing-y-20 border-primary-200 pt-8">
                 Updates to This Privacy Policy
               </h2>
-              <p className="text-xl tracking-wider pt-2">
+              <p className="sm:text-sm md:text-xl tracking-wider pt-2">
                 We may change or update portions of this Privacy Policy at any
                 time and without prior notice to you. Please check back from
                 time to time so you are aware of any changes or updates to the
